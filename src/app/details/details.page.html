@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-row>
+          <ion-col size=2>
+              <ion-icon (click)="GoBack()" name="arrow-round-back" size="large"></ion-icon>
+          </ion-col>
+          <ion-col size=8 text-center>
+              <ion-title>details</ion-title>
+            </ion-col>
+            <ion-col size=2>
+    
+              </ion-col>
+        </ion-row>
+    
+      </ion-toolbar>
+    
+</ion-header>
+
+<ion-content>
+    <ion-slides autoplay="5000" loop="true" speed="3000" [options]="slideOpts" pager >
+        <ion-slide pager *ngFor="let slide of slides">
+          <img [src]="slide.imageUrl" alt="slide.title" >
+         
+          <!-- <img [src]="slide.imageUrl" > -->
+        </ion-slide>
+      </ion-slides>
+    <br>
+    <hr>
+    <p>4 tickers lorem ipsum content here</p>
+    
+    <ion-card>
+      <ion-card-header>
+        <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
+        <ion-button style="float: right;margin-bottom:30px" size="small" shape="round">Advespirij</ion-button>
+        <ion-card-title style="text-align: center">00 : 05 : 47</ion-card-title>
+    
+      </ion-card-header>
+    
+      <ion-card-content>
+        <ion-button (click)="login()" style="display: block; margin: 0 auto;" size="medium" color="warning">Login en bied me</ion-button>
+        <br>
+     <a href="" style="text-align: center;
+     display:block;">Ik heb geen account</a>
+    
+     <ion-grid>
+       <ion-row>
+    <ion-col size="3">€18</ion-col>
+    <ion-col size="2">C.Nik</ion-col>
+    <ion-col size="7" > <p style="float: right">18:52:57</p></ion-col>
+       </ion-row>
+     </ion-grid>
+      </ion-card-content>
+    </ion-card>
+
+
+
+
+</ion-content>
